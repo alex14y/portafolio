@@ -1,0 +1,103 @@
+/* navegacion.css */
+
+/* Estilo común para la barra de navegación */
+.navbar {
+    background-color: #00010B;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 50%;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+  }
+  
+  /* Estilos para los elementos de navegación */
+  .nav-item {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    margin-right: 10px;
+  }
+  
+  .nav-item:hover {
+    background-color: #555;
+  }
+  
+  /* Estilo para el botón del menú en dispositivos móviles */
+  #menu-toggle {
+    display: none; /* Inicialmente oculto en pantallas grandes */
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1001;
+  }
+  @media (max-width: 1000px){
+    .navbar {
+        background-color: #00010B;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        width: 90%;
+        margin: 0 auto;
+        position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1000;
+      }
+  }
+  
+  /* Media query para pantallas con ancho máximo de 600px */
+  @media only screen and (max-width: 600px) {
+    .navbar {
+      display: none; /* Ocultar la barra de navegación en pantallas pequeñas */
+    }
+  
+    #menu-toggle {
+      display: block; /* Mostrar el botón solo en pantallas pequeñas */
+    }
+  
+    .navbar.show-menu {
+      display: flex; /* Asegurar que la barra de navegación se muestra al hacer clic en el botón */
+      position: fixed;
+      width: 100%;
+      background-color: #00010B;
+      top: 0; /* Centro verticalmente */
+      left: 50%;
+      z-index: 1000;
+      transform: translate(-50%, 0); /* Centrar horizontalmente y verticalmente */
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+      margin: 0;
+    }
+  
+    .nav-item {
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+      margin-right: 10px;
+    }
+  
+    .nav-item:hover {
+      background-color: #555;
+    }
+  }
+  
+  /* Ajuste para pantallas más grandes */
+  @media only screen and (min-width: 601px) {
+    #menu-toggle {
+      display: none; /* Ocultar el botón en pantallas más grandes */
+    }
+  }
+  

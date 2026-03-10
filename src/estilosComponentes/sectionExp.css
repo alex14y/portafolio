@@ -1,0 +1,83 @@
+#contenedor {
+    width: 100%;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column; /* Cambiado a columna para dispositivos móviles */
+  }
+  #exp-animado{
+    padding-top: 300px;
+}
+
+  #contenedor-interno {
+    background: linear-gradient(225deg, #00010a, #00010c);
+    
+    box-shadow: 0 0 20px 1px #652ec7;
+    border-radius: 37px;
+    width: 70%;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #contenido1,
+  #contenido2 {
+    flex: 1;
+    text-align: center;
+  }
+
+  /* Estilos opcionales para mejorar la apariencia */
+  #contenido1 {
+    margin-right: 10px;
+  }
+  #parrafo-exp{
+    text-align: left;
+    padding: 2px;
+  }
+
+  #contenido2 {
+    margin-left: 10px;
+  }
+  @media (max-width: 1000px) {
+    #contenedor-interno {
+        width: auto;
+        /* Cambiar a columna para dispositivos móviles */
+        height: auto; /* Ajustar la altura automáticamente */
+      }
+  }
+  @media (max-width: 999px) {
+    
+    #exp-animado{
+        padding-top: 620px;
+    }
+  }
+
+  @media (max-width: 620px) {
+    #contenedor-interno {
+      
+      width: 110%; /* Reducir el ancho para dispositivos móviles */
+      flex-direction: column; /* Cambiar a columna para dispositivos móviles */
+      height: auto; /* Ajustar la altura automáticamente */
+    }
+    #exp-animado{
+        padding-top: 870px;
+    }
+
+    #contenido1,
+    #contenido2 {
+        
+        
+      margin: 10px 0; /* Añadir espacio entre los elementos para dispositivos móviles */
+    }
+  }
+  #contenedor{
+    width: auto;
+    
+        
+  }
+  #parrafo-exp{
+    text-align: center;
+  }

@@ -1,0 +1,150 @@
+section {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px; /* Aumenta el espacio entre los divs */
+    box-sizing: border-box;
+  }
+  
+  .custom-div {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+    
+    display: flex;
+    flex-direction: column; /* Ajuste para mostrar los elementos en columna */
+    justify-content: center;
+    align-items: center;
+  }
+  .h1-proyectos{
+    text-align: center;
+  }
+
+  .img-habilidad{
+    width: 100%;
+    height: 100%;
+    
+  }
+
+  .sect-habilidad {
+    display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+  margin: 10px 0;
+}
+
+.column {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+    height: 270px; /* Ajusta la altura según tus necesidades */
+    /* Color de fondo para visualización */
+}
+.card {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-radius: 16px;
+ 
+  overflow: hidden;
+}
+
+ /*Image*/
+.card-image {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  background: #0a3394;
+  background: linear-gradient(to top, #0a3394, #4286f4);
+}
+
+/*Description */
+.card-description {
+  display: flex;
+  position: absolute;
+  gap: 0px;
+  flex-direction: column;
+  background-color: #f5f5f5;
+  color: #212121;
+  height: 70%;
+  bottom: 0;
+  border-radius: 16px;
+  transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  padding: 1rem;
+}
+
+/*Text*/
+.text-title {
+  padding-top: 0px;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.text-body {
+  font-size: 1rem;
+  line-height: 130%;
+}
+
+.image-container {
+  display: flex;
+}
+
+.round-image {
+  width: 30px; /* Ajusta el tamaño según tus necesidades */
+  height: 30px; /* Ajusta el tamaño según tus necesidades */
+  border-radius: 50%; /* Hace la imagen redonda */
+  margin-right: 10px; /* Ajusta el margen según tus necesidades */
+}
+
+
+/* Hover states */
+.card:hover .card-description {
+  transform: translateY(100%);
+}
+@media (max-width: 1000px){
+  .sect-habilidad {
+    grid-template-columns: 1fr 1fr;
+  }
+  .column{
+    height: 250px;
+  }
+}
+
+@media (max-width: 620px){
+  .sect-habilidad {
+    grid-template-columns: 1fr;
+    padding: 0px;
+  }
+  .column {
+  
+  width: 80%;
+   
+}
+.sect-habilidad{
+  display: flex;
+  justify-content: center;
+}
+  
+ 
+}
+@media (max-width: 462px){
+  .sect-habilidad {
+    grid-template-columns: 1fr;
+    padding: 0px;
+  }
+  .column {
+  height: 230px;
+  width: 100%;
+   
+}
+.sect-habilidad{
+  display: flex;
+  justify-content: center;
+}
+  
+ 
+}
+
