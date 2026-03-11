@@ -1,11 +1,10 @@
 import "./App.css";
-//import BotonGeneral from "./componentes/botonGeneral.js";
 import BotonDescarga from "./componentes/botonDescarga.js";
 import SectionHabilidad from "./componentes/sectionHabilidad.js";
 import SectionProyecto from "./componentes/sectionProyecto.js";
 import Navegacion from "./componentes/navegacion.js";
 import BotonWhatsapp from "./componentes/botonWhatsapp.js";
-import SectionEstudios from "./componentes/sectionEstudios.js";
+
 import SectionExp from "./componentes/sectionExp.js";
 import perfil from "./imagenes/yo.jpeg";
 
