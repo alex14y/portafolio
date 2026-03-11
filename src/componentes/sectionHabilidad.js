@@ -2,19 +2,13 @@ import React from "react";
 import "../estilosComponentes/sectionHabilidad.css";
 import css from "../imagenes/css2.png";
 import html from "../imagenes/html.png";
-import jquery from "../imagenes/jquery2.png";
 import js from "../imagenes/java.png";
-import mysql from "../imagenes/mysql2.png";
 import node from "../imagenes/node.png";
-import php from "../imagenes/php2.png";
 import boots from "../imagenes/boots2.png";
-import powerbi from "../imagenes/powerbi.png";
 import excel from "../imagenes/excel.png";
 import sprint from "../imagenes/sprint.png";
 import git from "../imagenes/git.png";
-import access from "../imagenes/access.png";
 import react2 from "../imagenes/react2.png";
-import wordpress from "../imagenes/wordpress.png";
 
 const SectionHabilidad = () => {
   return (

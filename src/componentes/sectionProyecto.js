@@ -2,7 +2,7 @@ import React from "react";
 import "../estilosComponentes/sectionProyecto.css";
 import miImagen from "../imagenes/iconReact.png";
 import miImagen2 from "../imagenes/proyecto2.png";
-import miImagen3 from "../imagenes/proyecto1.png";
+
 import css from "../imagenes/css.png";
 import html from "../imagenes/html.png";
 import wolan from "../imagenes/wolan2.png";
@@ -10,10 +10,10 @@ import wolan from "../imagenes/wolan2.png";
 import js from "../imagenes/js.png";
 import mysql from "../imagenes/mysql.png";
 import wordpress from "../imagenes/wordpress.png";
-import php from "../imagenes/php.png";
+
 import boots from "../imagenes/boots.png";
 import portf from "../imagenes/portf.png";
-import sistemaPortf from "../imagenes/sistemaPortf.png";
+
 
 const SectionProyecto = () => {
   return (
